@@ -8,6 +8,3 @@ jobs:
       - run:
           name: Running makepkg
           command: makepkg -s
-      - store_artifacts:
-          path: *.tar.xz
-
