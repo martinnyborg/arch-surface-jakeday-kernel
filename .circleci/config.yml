@@ -10,3 +10,4 @@ jobs:
           command: makepkg -s
       - store_artifacts:
           path: *.tar.xz
+
