@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: martinnyborg/archlinux-kernel-builder
+      - image: martinnyborg/archlinux-kernel-builder-docker
     steps:
       - checkout
       - run:
