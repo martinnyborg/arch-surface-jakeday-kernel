@@ -12,5 +12,7 @@ jobs:
             useradd builduser -m # Create the builduser
             passwd -d builduser # Delete the buildusers password
             printf 'builduser ALL=(ALL) ALL\n' | tee -a /etc/sudoers # Allow the builduser passwordless sudo
-            sudo -u builduser bash -c "makepkg -s"
+            sudo su - user << EOF
+                makepkg -s
+            EOF
 
