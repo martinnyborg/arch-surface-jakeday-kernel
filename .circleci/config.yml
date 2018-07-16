@@ -10,4 +10,4 @@ jobs:
           command: |
             makepkg -s
       - store_artifacts:
-          path: /root/project
+          path: /home/builduser/project
